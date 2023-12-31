@@ -8,6 +8,8 @@
 :root {
   --white: #fff;
   --red-orange: #f44336;
+  --shade-of-gray: #777;
+  --approx-Snow: #fff3f3;
 }
 
 .header {
@@ -101,6 +103,10 @@ nav img {
   transition: 1s;
 }
 
+nav .fa {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
@@ -114,8 +120,53 @@ nav img {
     height: 100vh;
     width: 200px;
     top: 0;
-    right: 0;
+    right: -200px;
     text-align: left;
     z-index: 2;
+    transition: 1s;
   }
+  nav .fa {
+    display: block;
+    color: var(--white);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: var(--shade-of-gray);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: var(--approx-Snow);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
 }
