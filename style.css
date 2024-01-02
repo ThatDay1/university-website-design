@@ -11,6 +11,11 @@
   --shade-of-gray: #777;
   --approx-Snow: #fff3f3;
   --light-red: #e20000b3;
+  --very-dark-shade-of-gray: #222;
+  --medium-light-gray: #999;
+  --davy-gray: #555;
+  --light-gray: #ccc;
+  --white-smoke: #f0f0f0;
 }
 
 .header {
@@ -189,6 +194,9 @@ h3 {
     margin-right: 15px;
   }
   .cta h1 {
+    font-size: 24px;
+  }
+  .sub-header h1 {
     font-size: 24px;
   }
 }
@@ -400,4 +408,73 @@ h3 {
 
 .red-btn:hover {
   color: var(--white);
+}
+
+.blog-content {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.blog-left {
+  flex-basis: 65%;
+}
+
+.blog-left img {
+  width: 100%;
+}
+
+.blog-left h2 {
+  color: var(--very-dark-shade-of-gray);
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.blog-left p {
+  color: var(--medium-light-gray);
+}
+
+.blog-right {
+  flex-basis: 32%;
+}
+
+.blog-right h3 {
+  background: var(--red-orange);
+  color: var(--white);
+  padding: 7px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.blog-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--davy-gray);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.comment-box {
+  border: 1px solid var(--light-gray);
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+
+.comment-box h3 {
+  text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  background: var(--white-smoke);
+}
+
+.comment-form button {
+  margin: 10px 0;
 }
